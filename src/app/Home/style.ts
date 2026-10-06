@@ -65,11 +65,81 @@ export const styles = StyleSheet.create({
     paddingTop: 24,
     paddingBottom: 62,
   },
+  listHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    paddingBottom: 8,
+    borderBottomWidth: 1,
+    borderBottomColor: '#E4E6EC',
+  },
+  listHeaderStatus: {
+    width: 24,
+  },
+  listHeaderDescription: {
+    flex: 1,
+    minWidth: 0,
+    fontSize: 12,
+    fontWeight: 600,
+    color: '#828282',
+  },
+  listHeaderQuantity: {
+    width: 72,
+    fontSize: 12,
+    fontWeight: 600,
+    color: '#828282',
+    textAlign: 'center',
+  },
+  listHeaderAction: {
+    width: 24,
+  },
   emptyListText: {
     fontSize: 14,
     color: '#808080',
     textAlign: 'center',
   },
 
-
+  rodape: {
+    gap: 8,
+    paddingTop: 12,
+    paddingBottom: 20,
+    borderTopWidth: 1,
+    borderTopColor: '#E4E6EC',
+  },
+  summaryRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  summaryLabel: {
+    fontSize: 14,
+    color: '#555',
+  },
+  summaryValue: {
+    fontSize: 14,
+    color: '#555',
+  },
+  total: {
+    fontSize: 18,
+    color: '#000',
+    fontWeight: 600,
+  },
+  valor: {
+    fontWeight: 400,
+    color: 'rgb(9, 118, 46)',
+  },
+  totalRow: {
+    marginTop: 4,
+    paddingTop: 8,
+    borderTopWidth: 1,
+    borderTopColor: '#E4E6EC',
+  },
+  totalValue: {
+    fontSize: 18,
+    fontWeight: 600,
+  },
+  pricingWarning: {
+    fontSize: 12,
+    color: '#b42318',
+  },
 });

@@ -7,6 +7,7 @@ import { Trash2 } from "lucide-react-native";
 
 type ItemData = {
     status: FilterStatus
+    quantidade: string
     description: string
 }
 
@@ -23,9 +24,11 @@ export function Item({ data, onRemove, onStatus }: Props) {
             <StatusIcon status={data.status} />
         </TouchableOpacity>
         <Text style={styles.description}>
-            {data.description}
+            {data.description} 
+        </Text>  
+        <Text style={styles.quantidade}>
+            {data.quantidade}
         </Text>
-
         <TouchableOpacity onPress={onRemove}>
             <Trash2 size={18} color="#828282" />
         </TouchableOpacity>
